@@ -1,0 +1,19 @@
+[project]
+name = "file-calculation-parser"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Grégory LEFER",email = "glefer@itroom.fr"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+]
+
+[tool.poetry]
+packages = [{include = "file_calculation_parser", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
