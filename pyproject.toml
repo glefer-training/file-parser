@@ -6,14 +6,25 @@ authors = [
     {name = "Grégory LEFER",email = "glefer@itroom.fr"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.13"
 dependencies = [
+    "black (>=25.1.0,<26.0.0)",
+    "isort (>=6.0.1,<7.0.0)",
+    "flake8 (>=7.1.2,<8.0.0)",
+    "pylint (>=3.3.5,<4.0.0)",
+    "mypy (>=1.15.0,<2.0.0)",
+    "pytest (>=8.3.5,<9.0.0)",
+    "pytest-cov (>=6.0.0,<7.0.0)",
+    "bandit (>=1.8.3,<2.0.0)",
+    "pre-commit (>=4.1.0,<5.0.0)"
 ]
 
 [tool.poetry]
 packages = [{include = "file_calculation_parser", from = "src"}]
 
-
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
